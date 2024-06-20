@@ -1,0 +1,213 @@
+#pick
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width:7vh;
+    height:7vh;
+    padding: 0;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s ease-in-out;
+}
+.pals
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+}
+#Buttons input
+{
+    margin: 1vh;
+    margin-bottom: 0;
+    border: 0;
+    padding: 1.2vh;
+    border-radius: 2vh;
+    font-size: 2vh;
+    font-family: 'Concert One';
+    transition: all 0.2s ease-in-out;
+}
+.pal
+{
+    margin: 1.5vh;
+    width: 7vh;
+    height: 7vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1vh;
+    border: dashed 1.5px black;
+    transition: all 0.2s ease-in-out;
+}
+@media (max-device-height: 900px ) and (orientation:landscape)
+{
+    #palety
+    {
+        margin-top: 8vh;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #first { 
+        order: 2; 
+        width:fit-content;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #second { 
+        display:flex;
+        order: 3;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #third { 
+        order: 1;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #Buttons
+    {
+        display:grid;
+        grid-template-rows: 1fr;
+        margin-bottom: 2vh;
+    }
+    #ColorWheelFull
+    {
+        width: 450px;
+    }
+    #Buttons input
+    {
+        padding: 1.4vh;
+        width: 36vh;
+        border-radius: 3vh;
+        font-size: 3vh;
+        margin-bottom: 1.2vh;
+    }
+    .pals
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left: -7vw;
+        margin-right: 2vw;
+    }
+    .pal
+    {
+        width: 9vh;
+        height: 9vh;
+    }
+    #pick
+    {
+        width:9vh;
+        height:9vh;
+    }
+}
+body
+{
+    margin:0;
+    font-family: 'Concert One';
+    text-align: center;
+}
+.pal:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#ColorPicker
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ColorWheelFull
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5vh;
+    margin-left: -35px;
+}
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+    border-bottom: dotted 2px gray;
+}
+#pick:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#pick::-webkit-color-swatch
+{
+    border-radius: 2vh;
+    border: 1px dashed black;
+}
+#pick::-moz-color-swatch
+{
+    border-radius: 2vh;
+    border: 1px dashed black;
+}
+#Buttons input:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#gradient:hover
+{
+    cursor: pointer;
+}
+area:hover
+{
+    cursor: pointer;   
+}
+#colorHEX
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    width: 20vh;
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    margin-bottom: 1.5vh;
+    border-radius: 2.2vh;
+    border: dotted 4px black;
+}
+#ButtonsRand
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2vh;
+}
+#ButtonsRand input
+{
+    border: 0;
+    padding: 1.4vh;
+    width: 40vh;
+    border-radius: 3vh;
+    font-size: 3vh;
+    font-family: 'Concert One';
+    transition: all 0.2s ease-in-out;
+}
+#ButtonsRand input:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
